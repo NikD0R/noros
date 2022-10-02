@@ -773,6 +773,7 @@
   }
   &__link--active {
     color: $accent;
+    @extend %roboto-700;
   }
   &__label {
     display: block;
@@ -802,6 +803,9 @@
     margin-top: 12px;
     color: $accent;
     display: inline-block;  
+  }
+  &__text {
+    margin-bottom: 25px;
   }
 }
 
