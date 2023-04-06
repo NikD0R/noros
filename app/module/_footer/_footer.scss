@@ -49,6 +49,7 @@
 
     path {
       fill: $default;
+      transition: all .3s;
     }
 
     &:hover {
@@ -73,6 +74,11 @@
   &__link {
     margin-bottom: 14px;
     display: block;
+    transition: all .3s;
+
+    &:hover {
+      color: $accent;
+    }
   }
 
   &__text {

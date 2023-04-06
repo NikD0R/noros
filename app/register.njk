@@ -5,21 +5,92 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Noros</title>
   <link rel="stylesheet" href="css/login.min.css" />
 </head>
 
 <body>
-  {% include 'app/module/_header/_header.html' %}
+  {# {% include 'app/module/_header/_header.html' %} #}
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="logo" />
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item ">
+            <a class="menu__list-link" href="index.html"> Home </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="shop.html"> shop </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link--active" href="login.html"> page </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="blog.html"> blog </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="contacts.html"> contact </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/user.png" alt="user icon">
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/search.png" alt="search icon">
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/heart.png" alt="heart icon">
+          <span class="user-nav__num">
+            3
+          </span>
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/cart.png" alt="cart icon">
+          <span class="user-nav__num">
+            7
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 
   <main class="main">
-      {% include 'app/module/_top/_top.html' %}
+      <section class="top">
+        <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+          <div class="container">
+            <h2 class="top__title title">REGISTER</h2>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="modal">
         <div class="container">
           <div class="modal__links">
-            <a class="modal__link modal__link--active" href="">REGISTER</a>
-            <a class="modal__link" href="">LOGIN</a>
+            <a class="modal__link modal__link--active" href="register.html">REGISTER</a>
+            <a class="modal__link" href="login.html">LOGIN</a>
           </div>
           <form class="modal__form" action="#">
             <label class="modal__label">
