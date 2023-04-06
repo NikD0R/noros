@@ -14,7 +14,7 @@
 .info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 110px;
+  margin-top: 110px;
   position: relative;
 
   &::before,
@@ -86,10 +86,10 @@
       flex-direction: column;
       justify-content: center;
       padding-top: 0;
-
+      
       .categories__item-subtitle,
       .categories__link:hover {
-        color: $accent;
+        color: #fe3e57;
       }
     }
 

@@ -5,16 +5,88 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Noros</title>
   <link rel="stylesheet" href="css/contacts.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
- {% include 'app/module/_header/_header.html' %}
+ {# {% include 'app/module/_header/_header.html' %} #}
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="logo" />
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item ">
+            <a class="menu__list-link" href="index.html"> Home </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="shop.html"> shop </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="login.html"> page </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="blog.html"> blog </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link--active" href="contacts.html"> contact </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/user.png" alt="user icon">
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/search.png" alt="search icon">
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/heart.png" alt="heart icon">
+          <span class="user-nav__num">
+            3
+          </span>
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/cart.png" alt="cart icon">
+          <span class="user-nav__num">
+            7
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 
   <main class="main">
-      {% include 'app/module/_top/_top.html' %}
+      <section class="top">
+        <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+          <div class="container">
+            <h2 class="top__title title">CONTACT US</h2>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
       <section class="map">
         <div class="container">
@@ -31,25 +103,24 @@
                 Contact With Us
               </h3>
               <p class="contact__info-text">
-                Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao cumsan lacus vel facilisis.
+                Have questions about our products, quality of customer service or anything else? Do not be afraid to write to us, we will be happy to answer any of your questions. Our manager is in touch 24/7 and he is always ready to help you
               </p>
               <ul class="contact__info-list">
                 <li class="contact__info-item">
-                  <a class="contact__info-phone" href="tel:+01234567896">
-                    +0-123-456-7896
+                  <a class="contact__info-phone" href="tel:+12458698376">
+                    +1 245 869 8376
                   </a>
-                  <a class="contact__info-phone" href="tel:+01234567896">
-                    +0-123-456-7896
+                  <a class="contact__info-phone" href="tel:+12458698376">
+                    +1 245 869 8376
                   </a>
                 </li>
                 <li class="contact__info-item contact__info-item--location">
-                  Ranlon Market 789 Road, <br>
-                  Market Street, Newyork
+                  Ranlon Market 654 Avenue, <br>
+                  Market Street, NewYork
                 </li>
                 <li class="contact__info-item contact__info-item--email">
-                  <div>yourmailaddress@gmail.com</div>
-                  <div>companymail@gmail.com</div>
+                  <div>NRSroadmarket@gmail.com</div>
+                  <div>Norosfashemail@gmail.com</div>
                 </li>
               </ul>
             </div>
@@ -111,7 +182,7 @@
                       "visibility": "simplified"
                     },
                     {
-                      "color": "#a31645"
+                      "color": "#3ed6fe"
                     }
                   ]
                 },
@@ -126,7 +197,7 @@
                       "visibility": "on"
                     },
                     {
-                      "color": "#ffecf0"
+                      "color": "#3ed6fe"
                     }
                   ]
                 },
@@ -156,7 +227,7 @@
                       "visibility": "simplified"
                     },
                     {
-                      "color": "#a31645"
+                      "color": "#ffffff"
                     }
                   ]
                 },
@@ -192,7 +263,7 @@
                       "visibility": "simplified"
                     },
                     {
-                      "color": "#d89ca8"
+                      "color": "#3ed6fe"
                     }
                   ]
                 },
@@ -222,7 +293,7 @@
                   "elementType": "labels",
                   "stylers": [
                     {
-                      "color": "#a31645"
+                      "color": "#ffffff"
                     }
                   ]
                 },
@@ -282,7 +353,7 @@
                   "elementType": "all",
                   "stylers": [
                     {
-                      "color": "#d89ca8"
+                      "color": "#3ed6fe"
                     },
                     {
                       "visibility": "on"
@@ -297,7 +368,7 @@
                       "visibility": "on"
                     },
                     {
-                      "color": "#fedce3"
+                      "color": "#3ed6fe"
                     }
                   ]
                 },

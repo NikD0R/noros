@@ -5,16 +5,88 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Noros</title>
   <link rel="stylesheet" href="css/blog.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-  {% include 'app/module/_header/_header.html' %}
+  {# {% include 'app/module/_header/_header.html' %} #}
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="logo" />
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item ">
+            <a class="menu__list-link" href="index.html"> Home </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="shop.html"> shop </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="login.html"> page </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link--active" href="blog.html"> blog </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="contacts.html"> contact </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/user.png" alt="user icon">
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/search.png" alt="search icon">
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/heart.png" alt="heart icon">
+          <span class="user-nav__num">
+            3
+          </span>
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/cart.png" alt="cart icon">
+          <span class="user-nav__num">
+            7
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 
   <main class="main">
-      {% include 'app/module/_top/_top.html' %}
+       <section class="top">
+        <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+          <div class="container">
+            <h2 class="top__title title">BLOG STANDARD</h2>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Blog page
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
       <section class="blog-page">
         <div class="container">
@@ -27,17 +99,16 @@
                 </a>
                 <div class="blog-page__item-box">
                   <h4 class="blog-page__item-title">
-                    <a class="blog-page__item-link" href="#">
-                      Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to enjoy!
+                    <a class="blog-page__item-link" href="blog-one.html">
+                      100+ Fall Outfits… Ease Into The Coming Season – Fall Outfit Ideas
                     </a>
                   </h4>
                   <div class="blog-box">
-                    <a class="blog-box__author" href="#">By Admin</a>
-                    <div class="blog-box__date" href="#">January, 2020</div>
+                    <a class="blog-box__author" href="blog-one.html">By Admin</a>
+                    <div class="blog-box__date" href="#">September, 2022</div>
                   </div>
                   <p class="blog-page__item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas acchmsan lacus vel facilisis.
+                    All good things come to an end and summer’s no exception. Luckily we’ve spotted some great trends and fall outfits to ease you into the coming season. Oversize jumpers are overwintering with us again this year so team with your favourite leather pants to create the perfect fall outfit. Embrace any kind of leg-warmers (no, not those) whether it’s denim, leggings, wide-leg trousers or palazzos, and enhance shorts with opaque tights. ‘Tis the season for layers as well as mellow fruit, as Keats sort of said, so start creating your wardrobe and check out our fall outfit ideas, too!
                   </p>
                 </div>
               </div>
@@ -48,16 +119,15 @@
                 <div class="blog-page__item-box">
                   <h4 class="blog-page__item-title">
                     <a class="blog-page__item-link" href="#">
-                      Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to enjoy!
+                      The best collection of dresses you've ever seen
                     </a>
                   </h4>
                   <div class="blog-box">
                     <a class="blog-box__author" href="#">By Admin</a>
-                    <div class="blog-box__date" href="#">January, 2020</div>
+                    <div class="blog-box__date" href="#">December, 2022</div>
                   </div>
                   <p class="blog-page__item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas acchmsan lacus vel facilisis.
+                    With thousands of talented fashion designers around the world, it is sad that you, the reader, only has access to a see a select few of their dresses online. We want to change that. The collection of dresses above has been assembled by the combined efforts of some amazing models and photographers from around the globe. OK, so they had some help from some serious brand names with great taste in dresses. We hope you enjoy viewing the collection of dress photos as much as we enjoyed putting it together.
                   </p>
                 </div>
               </div>
@@ -70,16 +140,15 @@
                 <div class="blog-page__item-box">
                   <h4 class="blog-page__item-title">
                     <a class="blog-page__item-link" href="#">
-                      Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to enjoy!
+                      The Blush Pink Trend That Will Change Your Wardrobe – Outfits And Ideas
                     </a>
                   </h4>
                   <div class="blog-box">
                     <a class="blog-box__author" href="#">By Admin</a>
-                    <div class="blog-box__date" href="#">January, 2020</div>
+                    <div class="blog-box__date" href="#">January, 2023</div>
                   </div>
                   <p class="blog-page__item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas acchmsan lacus vel facilisis.
+                    Should we view blush pink as just another pastel for 2023? We don’t think so. It’s a trend all on its own, with a soft warmth that positively glows, and it shows a depth that other pastels just can’t lay claim to. You’ll follow our meaning if you wrap a grey oversized scarf around a blush pink coat, or throw the latter over a powder blue knit. Team with a white silk blouse or top with a grey fedora, and you’ll totally get it! Choose black or indigo jeans for contrast, but be careful not to swamp the paler colour’s cool qualities. Light blue denim, on the other hand, is simply perfect for a dusky pink jacket over a loose peppery jumper. This is a colour of many subtleties, and it can possess a surprisingly rich tone, gifting you with accessories in its deepest hue that will stand out against its more pallid self, aka your new outfit. Blush pink makes for natural street style, so find yourself a fuzzy sweater or a bomber now. 
                   </p>
                 </div>
               </div>
@@ -87,16 +156,15 @@
                 <div class="blog-page__item-box">
                   <h4 class="blog-page__item-title">
                     <a class="blog-page__item-link" href="#">
-                      Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to enjoy!
+                      30 Cute Black Dress Outfits – How To Wear A Black Dress
                     </a>
                   </h4>
                   <div class="blog-box">
                     <a class="blog-box__author" href="#">By Admin</a>
-                    <div class="blog-box__date" href="#">January, 2020</div>
+                    <div class="blog-box__date" href="#">March, 2023</div>
                   </div>
                   <p class="blog-page__item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas acchmsan lacus vel facilisis.
+                    Is there anything more stylish than the perfect black dress? Black doesn’t have to be boring, and there are plenty of ways to express yourself whilst wearing this most fashionable shade. Stylish, easy to wear, and always on trend, the black dress is officially back in vogue, so why not give it a go? This article will show you how to wear a little black dress for any occasion.
                   </p>
                 </div>
               </div>
@@ -117,14 +185,13 @@
               <div class="person">
                 <img class="person__img" src="images/avatar/ceo.jpg" alt="avatar">
                 <div class="person__name">
-                  Tom D. Maianay
+                  Tom B. Wilson
                 </div>
                 <div class="person__position">
                   CEO & Founder
                 </div>
                 <p class="person__text">
-                  Lorem ipsum dolor sit amet, consectetum adipiscing eit, sed do eiusmod temporary incididunt ut labore et dolore magnaamo
-                  aliqua. Qus ipsum suspendisse ultrices an gravida. Risus com
+                  Tom has over 25 years of experience in the fashion retail industry with some of the US' biggest and best known retail brands. He has worked for Gap Inc, Nike, Victoria's Secret and Tommy Hilfiger in various senior positions in sales, marketing and operations. It was the work for these brands that prompted Tom to create his own brand, which would later be called Noros. Noros, launched in September 2021, is a American womenswear brand with a distinct identity, dedicated to helping all women find their unique look and style.
                 </p>
                 <div class="person__social">
                   <a class="person__social-link" href="#">
@@ -178,11 +245,11 @@
                   <div class="latest-post__box">
                     <a class="latest-post__title-link" href="#">
                       <h5 class="latest-post__box-title">
-                        Lorem ipsum dolor suitabl amet, adiping elit.
+                        The Sweatshirt Trend – It’s Different And It’s Cool 
                       </h5>
                     </a>
                     <div class="latest-post__date">
-                      16 Feb, 2019
+                      19 Dec, 2022
                     </div>
                   </div>
                 </div>
@@ -193,11 +260,11 @@
                   <div class="latest-post__box">
                     <a class="latest-post__title-link" href="#">
                       <h5 class="latest-post__box-title">
-                        Lorem ipsum dolor suitabl amet, adiping elit.
+                        30 Cute Black Dress Outfits – How To Wear A Black Dress
                       </h5>
                     </a>
                     <div class="latest-post__date">
-                      16 Feb, 2019
+                      20 Feb, 2023
                     </div>
                   </div>
                 </div>
@@ -208,11 +275,11 @@
                   <div class="latest-post__box">
                     <a class="latest-post__title-link" href="#">
                       <h5 class="latest-post__box-title">
-                        Lorem ipsum dolor suitabl amet, adiping elit.
+                        Summer Outfits: What You Need To Wear This Summer
                       </h5>
                     </a>
                     <div class="latest-post__date">
-                      16 Feb, 2019
+                      14 Mar, 2023
                     </div>
                   </div>
                 </div>
@@ -223,11 +290,11 @@
                   <div class="latest-post__box">
                     <a class="latest-post__title-link" href="#">
                       <h5 class="latest-post__box-title">
-                        Lorem ipsum dolor suitabl amet, adiping elit.
+                        How To Choose A Handbag For Your Look? Tips For Girls
                       </h5>
                     </a>
                     <div class="latest-post__date">
-                      16 Feb, 2019
+                      16 Jan, 2023
                     </div>
                   </div>
                 </div>
@@ -252,7 +319,7 @@
                     </div>
                   </label>
                   <label class="filter-category__label">
-                    <input class="filter-category__input" type="checkbox" checked>
+                    <input class="filter-category__input" type="checkbox">
                     <div class="filter-category__checkbox">
                       <span>Sale Products</span>
                       <span>92</span>
@@ -266,7 +333,7 @@
                     </div>
                   </label>
                   <label class="filter-category__label">
-                    <input class="filter-category__input" type="checkbox">
+                    <input class="filter-category__input" type="checkbox" checked>
                     <div class="filter-category__checkbox">
                       <span>Hot Dresses</span>
                       <span>52</span>
@@ -292,13 +359,13 @@
                     </span>
                   </label>
                   <label class="filter-popular__label">
-                    <input class="filter-popular__input" type="checkbox" checked>
+                    <input class="filter-popular__input" type="checkbox">
                     <span class="filter-popular__checkbox">
                       Man Accessories
                     </span>
                   </label>
                   <label class="filter-popular__label">
-                    <input class="filter-popular__input" type="checkbox">
+                    <input class="filter-popular__input" type="checkbox" checked>
                     <span class="filter-popular__checkbox">
                       Fashion
                     </span>

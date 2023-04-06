@@ -46,6 +46,10 @@
     width: 100%;
     border: none;
     cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      background-color: $accent;
+    }
   }
 
   &__error {

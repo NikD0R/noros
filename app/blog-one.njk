@@ -5,16 +5,87 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Noros</title>
   <link rel="stylesheet" href="css/blog-one.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-  {% include 'app/module/_header/_header.html' %}
+  {# {% include 'app/module/_header/_header.html' %} #}
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="logo" />
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item ">
+            <a class="menu__list-link" href="index.html"> Home </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="shop.html"> shop </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="login.html"> page </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link--active" href="blog.html"> blog </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="contacts.html"> contact </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/user.png" alt="user icon">
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/search.png" alt="search icon">
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/heart.png" alt="heart icon">
+          <span class="user-nav__num">
+            3
+          </span>
+        </a>
+        <a class="user-nav__link" href="#">
+          <img class="user-nav__link-img" src="images/icons/cart.png" alt="cart icon">
+          <span class="user-nav__num">
+            7
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 
   <main class="main">
-      {% include 'app/module/_top/_top.html' %}
+      <section class="top">
+        <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+          <div class="container">
+            <h2 class="top__title title">BLOG DETAILS</h2>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="blog.html">
+                    Blog page
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="blog-page blog-one">
         <div class="container">
@@ -30,7 +101,7 @@
                   </li>
                   <li class="blog-one__info-item">
                     <a class="blog-one__info-link blog-one__info-link--comment" href="#">
-                      3 comments
+                      2 comments
                     </a>
                   </li>
                   <li class="blog-one__info-item">
@@ -40,29 +111,20 @@
                   </li>
                 </ul>
                 <h4>
-                  In Particular The Global World Of Lorem Ipsum Asap Tempor
+                  100+ Fall Outfits… Ease Into The Coming Season – Fall Outfit Ideas
                 </h4>
                 <p>
-                  Lorem ipsum dolor siit amet, consectetur adiscing elit, sed do eiusmod tempor incididunt more utmm labore et dolore
-                  magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ecenas accumsan lacus vel facilisis. Quis ipsum
-                  suspenidisse ultrices gravida. Risus comdouma viverra more maecenas accumsan lacus vel facilisis.
+                  All good things come to an end and summer’s no exception. Luckily we’ve spotted some great trends and fall outfits to ease you into the coming season. Transition gently with a tailored knit or a lightweight coat over a tee in neutral colours, a natural  match for the season of soft colours and misty shades. Add contrast with black skinnies and define with sunglasses.
                 </p>
                 <blockquote>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elt, sed does eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua dilo. Quis ipsum suspendisse ultrices gravida.
+                  Fashion is part of the daily air and it changes all the time, with all the events. You can even see the approaching of a revolution in clothes. You can see and feel everything in clothes.
                 </blockquote>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt of in utmm labore et dolore
-                  magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ecenas accumsan lacus vel facilisis. Quis ipsum
-                  suspendisse ultrices gravida. Risus comdoumar viverra more maecenas accumsan lacus vel facilisis.
+                  Or perhaps you should copy the pattern of falling leaves with on-trend patchwork, or opt for two other runway favourites in ribbed knitwear cinched with a wide belt. Oversize jumpers are overwintering with us again this year so team with your favourite leather pants to create the perfect fall outfit. Embrace any kind of leg-warmers (no, not those) whether it’s denim, leggings, wide-leg trousers or palazzos, and enhance shorts with opaque tights.
                 </p>
                 <img class="blog-one__left-img" src="images/blog/blog-one.jpg" alt="blog-one image">
                 <p>
-                  Lorem ipsum dolor sit amet, consectur picing elit, sed do eusmod tempor incididunt ut mor more labore a doore magna
-                  aliqua. Quis into ipsum the suspendisse ultrices grda. Lorem in ipsum dolor sit amet, consectetur adipiscings elit, sed
-                  does eiusmod tempor incididunt mod labore et dolore magna aliqua. Quis ipsum in suspendisse fass a ultrices gravida.
-                  Loremon ipsum dolor st amaiet, consectetur aipiscinge elit, sed do eiusobimod tempor incididunt uts labore et doloroe
-                  gravida.
+                  If your style is a little more lady like and you take inspiration from the French-girl look, then look no further then slingback shoes. Chanel is an obvious advocate of this chic yet feminine look. We love their grey tweed version, which you can dress down with distressed jeans, or dress up with your favourite little black dress. The sportswear trend doesn’t seem to be going anywhere. Yeezy Season 10 models looked trendy in long hoodies and sports pieces ranging from leggings to crop tops. Wear your hoody with knee high boots this fall for a sexy-sporty combo.
                 </p>
               </div>
               <div class="blog-one__box">
@@ -113,10 +175,9 @@
               <div class="blog-one__author">
                 <img class="blog-one__author-img" src="images/blog/author.jpg" alt="author image">
                 <div class="blog-one__author-info">
-                  <h5 class="blog-one__author-name">JHON DOE</h5>
+                  <h5 class="blog-one__author-name">JHON Martin</h5>
                   <p class="blog-one__author-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo dajsna for tempor incididunt ut labore et dolore
-                    magna aliqua. Quis ipsum more in the a mo spendisse ultrices gravida. Risus commodo.
+                    It's the season for layering and ripe fruit, as Martin said, so start building your wardrobe and check out our fall outfit ideas! You will fall in love with fall fashion at first sight
                   </p>
                 </div>
               </div>
@@ -128,17 +189,14 @@
                 <div class="comments__content">
                   <div class="comments__content-top">
                     <p class="comments__content-name">
-                      Michle Jhon
+                      Sophia Brown
                     </p>
                     <p class="comments__content-date">
-                      2 days ago
+                      36 days ago
                     </p>
                   </div>
                   <p class="comments__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel
-                    facilisis.
+                    Your fall collection is something incredible. All these dresses, cardigans, coats, hoodies look amazing. I want to order something as soon as possible.
                   </p>
                   <a class="comments__content-reply" href="#">Reply</a>
                 </div>
@@ -148,17 +206,14 @@
                 <div class="comments__content">
                   <div class="comments__content-top">
                     <p class="comments__content-name">
-                      Michle Jhon
+                      Rossi Francesca
                     </p>
                     <p class="comments__content-date">
-                      2 days ago
+                      20 days ago
                     </p>
                   </div>
                   <p class="comments__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel
-                    facilisis.
+                    The new dresses and jackets are just amazing. I can already imagine how I will look in them, I am sure that I will find my ideal and unique image. You have never let me down.
                   </p>
                   <a class="comments__content-reply" href="#">Reply</a>
                 </div>
@@ -192,14 +247,13 @@
               <div class="person">
                 <img class="person__img" src="images/avatar/ceo.jpg" alt="avatar">
                 <div class="person__name">
-                  Tom D. Maianay
+                  Tom B. Wilson
                 </div>
                 <div class="person__position">
                   CEO & Founder
                 </div>
                 <p class="person__text">
-                  Lorem ipsum dolor sit amet, consectetum adipiscing eit, sed do eiusmod temporary incididunt ut labore et dolore magnaamo
-                  aliqua. Qus ipsum suspendisse ultrices an gravida. Risus com
+                  Tom has over 25 years of experience in the fashion retail industry with some of the US' biggest and best known retail brands. He has worked for Gap Inc, Nike, Victoria's Secret and Tommy Hilfiger in various senior positions in sales, marketing and operations. It was the work for these brands that prompted Tom to create his own brand, which would later be called Noros. Noros, launched in September 2021, is a American womenswear brand with a distinct identity, dedicated to helping all women find their unique look and style.
                 </p>
                 <div class="person__social">
                   <a class="person__social-link" href="#">
@@ -253,11 +307,11 @@
                   <div class="latest-post__box">
                     <a class="latest-post__title-link" href="#">
                       <h5 class="latest-post__box-title">
-                        Lorem ipsum dolor suitabl amet, adiping elit.
+                        The Sweatshirt Trend – It’s Different And It’s Cool 
                       </h5>
                     </a>
                     <div class="latest-post__date">
-                      16 Feb, 2019
+                      19 Dec, 2022
                     </div>
                   </div>
                 </div>
@@ -268,11 +322,11 @@
                   <div class="latest-post__box">
                     <a class="latest-post__title-link" href="#">
                       <h5 class="latest-post__box-title">
-                        Lorem ipsum dolor suitabl amet, adiping elit.
+                        30 Cute Black Dress Outfits – How To Wear A Black Dress
                       </h5>
                     </a>
                     <div class="latest-post__date">
-                      16 Feb, 2019
+                      20 Feb, 2023
                     </div>
                   </div>
                 </div>
@@ -283,11 +337,11 @@
                   <div class="latest-post__box">
                     <a class="latest-post__title-link" href="#">
                       <h5 class="latest-post__box-title">
-                        Lorem ipsum dolor suitabl amet, adiping elit.
+                        Summer Outfits: What You Need To Wear This Summer
                       </h5>
                     </a>
                     <div class="latest-post__date">
-                      16 Feb, 2019
+                      14 Mar, 2023
                     </div>
                   </div>
                 </div>
@@ -298,11 +352,11 @@
                   <div class="latest-post__box">
                     <a class="latest-post__title-link" href="#">
                       <h5 class="latest-post__box-title">
-                        Lorem ipsum dolor suitabl amet, adiping elit.
+                        How To Choose A Handbag For Your Look? Tips For Girls
                       </h5>
                     </a>
                     <div class="latest-post__date">
-                      16 Feb, 2019
+                      16 Jan, 2023
                     </div>
                   </div>
                 </div>
@@ -327,7 +381,7 @@
                     </div>
                   </label>
                   <label class="filter-category__label">
-                    <input class="filter-category__input" type="checkbox" checked>
+                    <input class="filter-category__input" type="checkbox">
                     <div class="filter-category__checkbox">
                       <span>Sale Products</span>
                       <span>92</span>
@@ -341,7 +395,7 @@
                     </div>
                   </label>
                   <label class="filter-category__label">
-                    <input class="filter-category__input" type="checkbox">
+                    <input class="filter-category__input" type="checkbox" checked>
                     <div class="filter-category__checkbox">
                       <span>Hot Dresses</span>
                       <span>52</span>
@@ -367,13 +421,13 @@
                     </span>
                   </label>
                   <label class="filter-popular__label">
-                    <input class="filter-popular__input" type="checkbox" checked>
+                    <input class="filter-popular__input" type="checkbox">
                     <span class="filter-popular__checkbox">
                       Man Accessories
                     </span>
                   </label>
                   <label class="filter-popular__label">
-                    <input class="filter-popular__input" type="checkbox">
+                    <input class="filter-popular__input" type="checkbox" checked>
                     <span class="filter-popular__checkbox">
                       Fashion
                     </span>

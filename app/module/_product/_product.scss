@@ -105,13 +105,13 @@
       padding: 11px 40px;
       background-color: $title;
       border: none;
-
       @extend %roboto-400;
       transition: all .3s;
+      cursor: pointer;
 
       &:hover {
         background-color: $accent;
-        box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+        box-shadow: 0px 7px 20px 0px rgba(62,214, 254, 0.3);
       }
     }
   }
@@ -218,6 +218,7 @@
       top: 25px;
       left: 25px;
       line-height: 1;
+      cursor: auto;
     }
   }
 }
