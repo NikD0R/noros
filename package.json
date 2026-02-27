@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "deploy": "npm run build && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mykyta Doroshenko",
@@ -13,6 +16,7 @@
     "@fancyapps/ui": "^4.0.31",
     "browser-sync": "^2.27.10",
     "del": "^6.0.0",
+    "gh-pages": "^6.3.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",

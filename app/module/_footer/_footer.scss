@@ -32,6 +32,11 @@
   &__phone {
     display: block;
     margin-bottom: 14px;
+    transition: color .4s;
+
+    &:hover {
+      color: $accent;
+    }
   }
 
   &__social-list {
@@ -161,6 +166,7 @@
     &__nav {
       margin-top: 30px;
     }
+
     &__form {
       flex-wrap: wrap;
     }
